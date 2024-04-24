@@ -1,0 +1,29 @@
+---
+id: >-
+    doli-mvl
+name: >-
+    Doli MVL Extractor
+description: >-
+    A format for Doli binary file (.mvl) for tension-compression machine.
+supported_filetypes:
+    - id: doli-mvl
+license:
+    spdx: MIT
+subject:
+    - Tension-Compression
+source_repository: https://github.com/PASTA-ELN/Converters
+documentation: https://github.com/PASTA-ELN/Converters
+citations:
+    - uri: https://github.com/PASTA-ELN/Converters
+      creators:
+          - S. Brinckmann
+      title: 'converters from binary files to hdf5'
+      type: software
+usage:
+    - method: cli
+      command: converter_mvl {{ input_path }}
+installation:
+    - method: pip
+      packages:
+          - git+https://github.com/ks00x/zeiss_tiff_meta
+      requires_python: >=3.9
