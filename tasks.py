@@ -40,12 +40,25 @@ def validate_entries(_):
 
     counts = {}
     for type_ in (FileType, Extractor):
-        counts[type_] = load_registry_collection(
+        entries = load_registry_collection(
             type_,
             database=None,
             validate=True,
         )
+        counts[type_] = len(entries)
         print(f"Loaded {counts[type_]} {type_.__name__} entries")
+
+        if type_ is Extractor:
+            filetype_ids = set(
+                d.name.strip(".yml") for d in Path(__file__).parent.glob("./marda_registry/data/filetypes/*.yml")
+            )
+
+            for extractor in entries:
+                for filetype in extractor.supported_filetypes:
+                    if filetype.id not in filetype_ids:
+                        raise RuntimeError(
+                            f"Extractor {extractor.name=} has invalid filetype {filetype.id=}. Should be one of {filetype_ids=}"
+                        )
 
     print("Done!")
 
