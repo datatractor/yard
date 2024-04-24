@@ -39,6 +39,7 @@ def validate_entries(_):
     from marda_registry.utils import load_registry_collection
 
     counts = {}
+    errors = []
     for type_ in (FileType, Extractor):
         entries = load_registry_collection(
             type_,
@@ -56,9 +57,12 @@ def validate_entries(_):
             for extractor in entries:
                 for filetype in extractor.supported_filetypes:
                     if filetype.id not in filetype_ids:
-                        raise RuntimeError(
+                        errors.append(
                             f"Extractor {extractor.name=} has invalid filetype {filetype.id=}. Should be one of {filetype_ids=}"
                         )
+
+    if errors:
+        raise RuntimeError("\n".join(errors))
 
     print("Done!")
 
