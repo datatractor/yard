@@ -10,8 +10,8 @@ description: >-
     - KLA G200X Nanoindenter (.NMD)
 supported_filetypes:
     - id: doli-mvl
-    - id: fischerScope-hap
-    - id: klaG200X-nmd
+    - id: fischer-scope-hap
+    - id: kla-g200x-nmd
 license:
     spdx: MIT
 subject:
