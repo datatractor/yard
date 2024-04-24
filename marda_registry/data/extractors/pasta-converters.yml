@@ -29,13 +29,13 @@ citations:
 usage:
     - method: cli
       command: converter_hap {{ input_path }}
-      supported_filetypes: [fischerScope-hap]
+      supported_filetypes: [fischer-scope-hap]
     - method: cli
       command: converter_mvl {{ input_path }}
       supported_filetypes: [doli-mvl]
     - method: cli
       command: converter_nmd {{ input_path }}
-      supported_filetypes: [klaG200X-nmd]
+      supported_filetypes: [kla-g200x-nmd]
 installation:
     - method: pip
       packages:
