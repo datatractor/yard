@@ -51,7 +51,7 @@ def validate_entries(_):
 
         if type_ is Extractor:
             filetype_ids = set(
-                d.name.strip(".yml")
+                d.stem
                 for d in Path(__file__).parent.glob(
                     "./marda_registry/data/filetypes/*.yml"
                 )
@@ -60,6 +60,7 @@ def validate_entries(_):
             for extractor in entries:
                 for filetype in extractor.supported_filetypes:
                     if filetype.id not in filetype_ids:
+                        breakpoint()
                         errors.append(
                             f"Extractor {extractor.name=} has invalid filetype {filetype.id=}. Should be one of {filetype_ids=}"
                         )
