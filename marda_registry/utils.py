@@ -1,6 +1,6 @@
 import glob
 import pathlib
-from typing import Type, Any
+from typing import Any, Type
 
 import mongomock as pymongo
 import yaml

@@ -51,7 +51,10 @@ def validate_entries(_):
 
         if type_ is Extractor:
             filetype_ids = set(
-                d.name.strip(".yml") for d in Path(__file__).parent.glob("./marda_registry/data/filetypes/*.yml")
+                d.name.strip(".yml")
+                for d in Path(__file__).parent.glob(
+                    "./marda_registry/data/filetypes/*.yml"
+                )
             )
 
             for extractor in entries:
