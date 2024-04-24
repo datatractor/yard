@@ -25,5 +25,5 @@ usage:
 installation:
     - method: pip
       packages:
-          - git+https://github.com/ks00x/zeiss_tiff_meta
+          - git+https://github.com/PASTA-ELN/Converters
       requires_python: '>=3.9'
