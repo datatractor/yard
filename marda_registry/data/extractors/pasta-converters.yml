@@ -8,6 +8,7 @@ description: >-
     - Doli binary file (.mvl) for tension-compression machine.
     - Fischer Scope Indenter (.hap)
     - KLA G200X Nanoindenter (.NMD)
+    Outputs to hdf5 / Nexus format
 supported_filetypes:
     - id: doli-mvl
     - id: fischer-scope-hap
