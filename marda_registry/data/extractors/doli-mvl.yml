@@ -26,4 +26,4 @@ installation:
     - method: pip
       packages:
           - git+https://github.com/ks00x/zeiss_tiff_meta
-      requires_python: >=3.9
+      requires_python: '>=3.9'
