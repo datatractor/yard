@@ -1,16 +1,22 @@
 ---
 id: >-
-    doli-mvl
+    pasta-converters
 name: >-
-    Doli MVL Extractor
+    Extractors from PASTA-ELN
 description: >-
-    A format for Doli binary file (.mvl) for tension-compression machine.
+    A collection of extractors for
+    - Doli binary file (.mvl) for tension-compression machine.
+    - Fischer Scope Indenter (.hap)
+    - KLA G200X Nanoindenter (.NMD)
 supported_filetypes:
     - id: doli-mvl
+    - id: fischerScope-hap
+    - id: klaG200X-nmd
 license:
     spdx: MIT
 subject:
     - Tension-Compression
+    - Nanoindentation
 source_repository: https://github.com/PASTA-ELN/Converters
 documentation: https://github.com/PASTA-ELN/Converters
 citations:
@@ -21,7 +27,14 @@ citations:
       type: software
 usage:
     - method: cli
+      command: converter_hap {{ input_path }}
+      supported_filetypes: [fischerScope-hap]
+    - method: cli
       command: converter_mvl {{ input_path }}
+      supported_filetypes: [doli-mvl]
+    - method: cli
+      command: converter_nmd {{ input_path }}
+      supported_filetypes: [klaG200X-nmd]
 installation:
     - method: pip
       packages:
