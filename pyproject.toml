@@ -55,17 +55,19 @@ dev = [
 repository = "https://github.com/marda-alliance/metadata_extractors_registry"
 
 [tool.ruff]
-select = ["E", "F", "I", "W", "Q"]
-ignore = ["E501", "E402"]
-fixable = ["A", "B", "C", "D", "E", "F", "I"]
-unfixable = []
 extend-exclude = [
     "providers",
 ]
 target-version = "py310"
-per-file-ignores = {}
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "Q"]
+ignore = ["E501", "E402"]
+fixable = ["A", "B", "C", "D", "E", "F", "I"]
+unfixable = []
 # Allow unused variables when underscore-prefixed.
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+per-file-ignores = {}
 
 [tool.mypy]
 ignore_missing_imports = true
