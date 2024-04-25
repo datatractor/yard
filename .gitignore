@@ -1,5 +1,5 @@
 # Repo-specific
-marda_registry/models/*
+marda_registry/models/[A-Za-z0-9]*.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
