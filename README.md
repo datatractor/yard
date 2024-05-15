@@ -12,7 +12,7 @@
 
 </div>
 
-A place to develop and discuss the MaRDA Extractors WG registry.
+A place to develop and discuss the Datatractor Yard (formerly the MaRDA Extractors WG registry).
 The idea is to collect various file formats used in materials science and chemistry, describe them with metadata, and provide links to software projects that can parse them.
 
 By providing this data in a web API, it hoped that users can discover new extractors more easily and metadata standards can be developed for the output of extractors to enable schemas to proliferate throughout the field.
@@ -42,7 +42,7 @@ invoke regenerate-models
 From the repository root directory, launch the server with uvicorn:
 
 ```
-uvicorn marda_registry.app:app
+uvicorn yard.app:app
 ```
 
 then navigate to http://localhost:5000 to test.

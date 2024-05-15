@@ -2,7 +2,7 @@ from pathlib import Path
 
 from invoke import task
 
-MODEL_DIRECTORY = Path(__file__).parent / "marda_registry" / "models"
+MODEL_DIRECTORY = Path(__file__).parent / "yard" / "models"
 
 
 @task
@@ -35,8 +35,8 @@ def regenerate_models(_):
 def validate_entries(_):
     print("Validating entries")
 
-    from marda_registry.models import Extractor, FileType
-    from marda_registry.utils import load_registry_collection
+    from yard.models import Extractor, FileType
+    from yard.utils import load_registry_collection
 
     counts = {}
     errors = []
@@ -52,9 +52,7 @@ def validate_entries(_):
         if type_ is Extractor:
             filetype_ids = set(
                 d.stem
-                for d in Path(__file__).parent.glob(
-                    "./marda_registry/data/filetypes/*.yml"
-                )
+                for d in Path(__file__).parent.glob("./yard/data/filetypes/*.yml")
             )
 
             for extractor in entries:
@@ -76,12 +74,8 @@ def check_for_yaml(_):
 
     print("Checking for erroneous .yaml files.")
 
-    extractors = list(
-        Path(__file__).parent.glob("./marda_registry/data/extractors/*.yaml")
-    )
-    filetypes = list(
-        Path(__file__).parent.glob("./marda_registry/data/filetypes/*.yaml")
-    )
+    extractors = list(Path(__file__).parent.glob("./yard/data/extractors/*.yaml"))
+    filetypes = list(Path(__file__).parent.glob("./yard/data/filetypes/*.yaml"))
 
     for e in extractors:
         print(f"Found {e} with bad file extension (should be .yml here)")
@@ -100,12 +94,11 @@ def validate_lfs_examples(_):
     """Loop through the LFS dir and check that each directory has a corresponding filetype."""
 
     filetype_ids = set(
-        d.stem
-        for d in Path(__file__).parent.glob("./marda_registry/data/filetypes/*.yaml")
+        d.stem for d in Path(__file__).parent.glob("./yard/data/filetypes/*.yaml")
     )
 
     lfs_filetype_dirs = set(
-        d.name for d in Path(__file__).parent.glob("./marda_registry/data/lfs/*")
+        d.name for d in Path(__file__).parent.glob("./yard/data/lfs/*")
     )
 
     errors = []
