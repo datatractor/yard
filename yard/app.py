@@ -10,15 +10,14 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from yard import __api_version__
 from pydantic import BaseModel
-
-from marda_registry import __api_version__
 
 from .models import Extractor, FileType
 from .utils import load_registry_collection
 
 app = FastAPI(
-    title="MaRDA extractors registry API",
+    title="Datatractor Yard API",
     description=f"This server implements v{__api_version__} of the [MaRDA extractors WG](https://github.com/marda-alliance/metadata_extractors) registry API.",  # noqa: E501
     version=__api_version__,
 )

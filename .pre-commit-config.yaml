@@ -1,5 +1,5 @@
 ---
-exclude: ^(marda_registry/data/)
+exclude: ^(yard/data/)
 repos:
     - repo: https://github.com/pre-commit/pre-commit-hooks
       rev: v4.6.0
