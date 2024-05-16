@@ -5,6 +5,11 @@ build-backend = "hatchling.build"
 [tool.hatch.version]
 source = "versioningit"
 
+[tool.versioningit.format]
+distance = "{base_version}.post{distance}"
+dirty = "{base_version}.dev{build_date:%Y%m%d}"
+distance-dirty = "{base_version}.post{distance}.dev{build_date:%Y%m%d}"
+
 [tool.hatch.metadata]
 # required to allow git deps in optional dependencies
 allow-direct-references = true
