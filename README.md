@@ -2,7 +2,7 @@
 <img width="100px" align="center" src="https://avatars.githubusercontent.com/u/166528759">
 </div>
 
-# <div align="center">DataTractor Yard: Metadata Extractor Registry</div>
+# <div align="center">Datatractor Yard: Metadata Extractor Registry</div>
 
 <div align="center">
 
