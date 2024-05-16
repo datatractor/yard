@@ -4,13 +4,12 @@ name: Publish Docker image on release
 on:
     release:
         types: [published]
-    push:
-        branches: main
 
 jobs:
     push_to_registry:
         name: Push Docker image to Docker Hub
         runs-on: ubuntu-latest
+        if: github.repository == 'datatractor/yard' && startsWith(github.ref, 'refs/tags/v')
         steps:
             - name: Check out the repo
               uses: actions/checkout@v4
@@ -29,7 +28,7 @@ jobs:
               uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
               with:
                   images: mlevs/datatractor-yard
-                  tags: type=sha
+                  tags: type=ref,event=tag
                   flavor: latest=true
 
             - name: Build and push Docker image
