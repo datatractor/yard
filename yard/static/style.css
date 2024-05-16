@@ -11,11 +11,12 @@ h1 {
 }
 
 :root {
-  --primary-color: #58D0BB;
-  --secondary-color: #FFAB40;
-  --tertiary-color: #EEFF41;
+  --primary-color: GhostWhite;
+  --secondary-color: LightCoral;
+  --tertiary-color: #58D0BB;
   --body-color: #F8F8F8;
   --background-color: #0B1B28;
+  --highlight-color: LemonChiffon;
 }
 
 html {
@@ -164,7 +165,7 @@ a {
 }
 
 p > a{
-  color: var(--primary-color);
+  color: var(--highlight-color);
   text-decoration: none;
 }
 
