@@ -43,7 +43,7 @@ An example of the process can be seen in this [pull request](https://github.com/
 - You can of course validate your definitions locally, by using the [![Schema](https://badgen.net/static/datatractor/schema/?icon=github)](https://github.com/datatractor/schema/) package, see the [Usage section](https://datatractor.github.io/schema/main/usage.html) of the documentation.
 
 ### Testing of Extraction
-- You should check that your `yml` definitions can be used to install the `Extractor` and and extract any example files from the supported `FileTypes` locally, by using our [![Schema](https://badgen.net/static/datatractor/beam/?icon=github)](https://github.com/datatractor/beam/) package, see the [Installation](https://github.com/datatractor/beam#installation) and [Usage](https://github.com/datatractor/beam#usage) sections.
+- You should check that your `yml` definitions can be used to install the `Extractor` and and extract any example files from the supported `FileTypes` locally, by using the datatractor [![beam](https://badgen.net/static/datatractor/beam/?icon=github)](https://github.com/datatractor/beam/) package, see the [Installation](https://github.com/datatractor/beam#installation) and [Usage](https://github.com/datatractor/beam#usage) sections.
 
 > At the moment, the above CI is not checking whether the extraction of the example files actually works. See [this issue](https://github.com/datatractor/yard/issues/9) for further details.
 
