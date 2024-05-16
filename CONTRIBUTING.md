@@ -1,5 +1,5 @@
 <div align="center" style="padding-bottom: 1em;">
-<img width="100px" align="center" src="https://avatars.githubusercontent.com/u/74017645?s=200&v=4">
+<img width="100px" align="center" src="https://avatars.githubusercontent.com/u/166528759">
 </div>
 
 # <div align="center">Datatractor Yard</div>
@@ -13,10 +13,10 @@ An example of the process can be seen in this [pull request](https://github.com/
 
 
 ### Opening a pull request
-- One pull request (PR) per `Extractor`, please.
+- One pull request (PR) per `Extractor` package, please.
     - You can include multiple versions of one `Extractor` in separate `.yml` files.
     - Do not include multiple unrelated `Extractors` in a single PR.
-- Include any missing `FileTypes` supported by the `Extractor` in the same PR.
+- Feel free to include any missing `FileTypes` supported by the `Extractor` in the same PR.
 - Please add the appropriate labels (`Extractor` and `FileType`).
 
 ### Example files

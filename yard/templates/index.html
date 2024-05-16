@@ -2,11 +2,13 @@
 {% block title %}About{% endblock %}
 {% block content %}
 
+<h2>Welcome to the Datatractor Yard</h2>
 
 <p>The idea of this site is to collect various file formats used in materials science and chemistry, describe them with metadata, and provide links to software projects that can parse them.</p>
-<p>By providing this data in a web API, it hoped that users can discover new extractors more easily and metadata standards can be developed for the output of extractors to enable schemas to proliferate throughout the field.</p>
 
 <p>This <a href="https://github.com/datatractor/yard"><i class="fa fa-github"></i> registry</a> uses the Datatractor <a href="https://datatractor.github.io/schema">Schemas</a> (<a href="https://github.com/datatractor/schema"><i class="fa fa-github"></i> repository</a>) and enables programmatic use and discovery of extractors, as shown in our <a href="https://github.com/datatractor/beam"><i class="fa fa-github"></i> reference implementation</a>.</p>
+
+<p>By providing this data in a web API, we hope that users can discover new extractors more easily, and that metadata standards will be developed describing the output of extractors, enabling schemas to proliferate throughout the field.</p>
 
 <p>The proof-of-concept of this project was devised as part of the <a href="https://www.marda-alliance.org/working-groups">MaRDA</a> Metadata Extractors Working Group, and is continued as the Datatractor project. Further discussions and instructions for how to get involved can be found at the <a href="https://github.com/orgs/datatractor/discussions"><i class="fa fa-github"></i> Datatractor discussions page</a>.</p>
 
@@ -15,7 +17,7 @@
 <h2>Contributing</h2>
 
 <p>Anyone can contribute file type and extractor entries to this registry by following the instructions in the <a href="https://github.com/datatractor/yard/blob/main/CONTRIBUTING.md">contributing guidelines on <i class="fa fa-github"></i> GitHub</a>.</p>
-<p>After submitting a pull request, this data will be validated and added to the deployed database once it is merged.</p>
+<p>After submitting a pull request, your contributions will be reviewed and validated. The entries are listed in this registry once your pull request is merged and deployed.</p>
 
 
 {% endblock %}
