@@ -31,7 +31,7 @@ source_repository: https://github.com/echemdata/galvani
 usage:
     - method: python
       setup: galvani
-      command: galvani.BioLogic.MPRFile({{ input_path }})
+      command: galvani.BioLogic.MPRfile({{ input_path }})
       supported_filetypes:
         - biologic-mpr
     - method: python
