@@ -1,0 +1,18 @@
+---
+id: >-
+    diffrac-eva-xy
+name: >-
+    DIFFRAC.EVA XY export
+description: >-
+    A plain text data file exported by Bruker's DIFFRAC.EVA software, containing a diffraction pattern,
+    optional uncertaintities, and a header with some generic metadata about the experiment.
+associated_file_extensions:
+    - xy
+    - xye
+associated_vendors:
+    - Bruker
+subject:
+    - diffraction
+associated_software:
+    - Bruker EVA.DIFFRAC
+
