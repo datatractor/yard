@@ -19,6 +19,13 @@ By providing this data in a web API, it hoped that users can discover new extrac
 
 The state of the `main` branch is deployed to https://yard.datatractor.org/, with API docs (and built-in client) accessible at https://yard.datatractor.org/redoc.
 
+For more information, see the preprint:
+
+> **Datatractor: Metadata, automation, and registries for extractor interoperability in the chemical and materials sciences**  
+> Matthew L. Evans, Gian-Marco Rignanese, David Elbert & Peter Kraus  
+> [arXiv:2410.18839](https://arxiv.org/abs/2410.18839) (2024)
+
+
 ## Contributing
 
 You are welcome to contribute file type and extractor entries to this registry, by opening a pull request. Please see the [contributing guidelines](./CONTRIBUTING.md) for detailed steps. After submitting a pull request, this data will be validated and added to the deployed database once it is merged.
