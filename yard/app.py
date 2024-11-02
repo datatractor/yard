@@ -12,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 
-from yard import __api_version__
+from yard import __api_version__, __version__
 
 from .models import Extractor, FileType
 from .utils import load_registry_collection
@@ -200,7 +200,9 @@ async def load_data():
     _get_info()
 
 
+# Serve API under API version (vX.Y) and full API+data version (vX.Y.Z)
 app.mount(f"/api/v{__api_version__}", api)
+app.mount(f"/api/v{__version__}", api)
 app.mount("/api/", api)
 
 
