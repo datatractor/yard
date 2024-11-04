@@ -49,7 +49,6 @@ dependencies = [
 [project.optional-dependencies]
 test = [
     "pytest",
-    "marda-extractors-api[formats] @ git+https://github.com/datatractor/yard.git",
 ]
 
 dev = [
