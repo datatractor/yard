@@ -5,14 +5,14 @@ name: >-
     Galvani
 description: >-
     Read proprietary file formats from electrochemical test stations, including
-    BioLogic MPR and MPT files, and the res format from Arbin. 
+    BioLogic MPR and MPT files, and the res format from Arbin.
 
     NB: The Arbin res format is not directly supported via datatractor as the data
     returned in this case is a view into a sqlite database.
 supported_filetypes:
     - id: biologic-mpr
       description: >-
-          Note: support for MPR files created by ECLab >= 11.50 requires 
+          Note: support for MPR files created by ECLab >= 11.50 requires
           `galvani>=0.4`.
     - id: biologic-mpt
 license:
@@ -31,7 +31,7 @@ source_repository: https://github.com/echemdata/galvani
 usage:
     - method: python
       setup: galvani
-      command: galvani.BioLogic.MPRfile({{ input_path }})
+      command: galvani.BioLogic.MPRfile({{ input_path }}).data
       supported_filetypes:
         - biologic-mpr
     - method: python
