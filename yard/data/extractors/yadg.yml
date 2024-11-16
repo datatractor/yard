@@ -7,16 +7,28 @@ description: >-
     yadg is a set of tools to extract and parse raw instrument data.
 supported_filetypes:
     - id: biologic-mpr
+      template:
+          input_type: eclab.mpr
       description: >-
           Note: Several fields in file headers are not translated into meaningful
           parameters.
     - id: biologic-mpt
+      template:
+          input_type: eclab.mpt
     - id: agilent-ch
+      template:
+          input_type: agilent.ch
     - id: agilent-dx
+      template:
+          input_type: agilent.dx
       description: >-
           Note: Only .ch files contained in the .dx archive are parsed.
     - id: phi-spe
+      template:
+          input_type: phi.spe
     - id: panalytical-xrdml
+      template:
+          input_type: panalytical.xrdml
 license:
     spdx: GPL-3.0-only
 subject:
@@ -60,6 +72,10 @@ usage:
       setup: yadg
       command: yadg.extractors.extract({{ input_type }}, {{ input_path }})
 installation:
+    - method: pip
+      packages:
+          - yadg~=6.0
+      requires_python: '>=3.10'
     - method: pip
       packages:
           - yadg~=5.0
