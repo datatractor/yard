@@ -4,14 +4,13 @@ id: >-
 name: >-
     Rigaku .rasx file
 description: >-
-    A ZIP file, containing nested folders storing diffraction patterns in plain text, and measurement
+    A ZIP file, containing nested folders storing PXRD patterns in plain text, with measurement
     metadata as XML.
 associated_file_extensions:
     - rasx
 associated_vendors:
     - Rigaku
 subject:
-    - x-ray diffraction
 associated_instruments:
     - Rigaku SmartLab
 associated_software:
