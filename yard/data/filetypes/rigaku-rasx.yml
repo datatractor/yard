@@ -1,0 +1,17 @@
+---
+id: >-
+    rigaku-rasx
+name: >-
+    Rigaku .rasx file
+description: >-
+    A ZIP file, containing nested folders storing PXRD patterns in plain text, with measurement
+    metadata as XML.
+associated_file_extensions:
+    - rasx
+associated_vendors:
+    - Rigaku
+subject:
+associated_instruments:
+    - Rigaku SmartLab
+associated_software:
+    - SmartLab Studio II
