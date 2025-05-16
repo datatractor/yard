@@ -4,13 +4,13 @@ id: >-
 name: >-
     Neware NDA
 description: >-
-    A binary data file used by Neware cyclers. At least two different versions 
+    A binary data file used by Neware cyclers. At least two different versions
     exist, one with the `.nda` file extension, the other with `.ndax`.
-    From the Neware website: "NDA file is a kind of structured data file. 
-    This kind of file stores testing data and other information including 
+    From the Neware website: "NDA file is a kind of structured data file.
+    This kind of file stores testing data and other information including
     steps once you scheduled and log during testing."
 associated_file_extensions:
-    - nda 
+    - nda
     - ndax
 associated_vendors:
     - Neware
@@ -23,4 +23,3 @@ associated_instruments:
     - CT-4000 series
 associated_software:
     - Neware BTSDA
-

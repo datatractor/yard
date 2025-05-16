@@ -28,8 +28,8 @@ citations:
       title: HyperSpy
       type: software
       creators:
-        - Francisco de la Peñare
-        - et al.
+          - Francisco de la Peñare
+          - et al.
 source_repository: https://github.com/hyperspy/rosettasciio
 documentation: https://hyperspy.org/rosettasciio
 usage:

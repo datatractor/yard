@@ -24,7 +24,7 @@ citations:
     - uri: https://github.com/PASTA-ELN/Converters
       creators:
           - S. Brinckmann
-      title: 'converters from binary files to hdf5'
+      title: converters from binary files to hdf5
       type: software
 usage:
     - method: cli
