@@ -1,0 +1,35 @@
+---
+id: >-
+    navani 
+name: >-
+    navani
+description: >-
+    Module for processing and plotting electrochemical data from battery cyclers. Contains functions to extract dQ/dV. 
+supported_filetypes:
+    - id: biologic-mpr
+    - id: neware-nda
+    - id: landt-excel
+    - id: arbin-excel
+    - id: arbin-res
+    - id: ivium-txt
+license:
+    spdx: MIT
+subject:
+    - electrochemistry
+    - voltammetry
+citations:
+    - uri: https://github.com/be-smith/navani
+      creators:
+          - B. Smith
+      title: navani github repository
+      type: software
+source_repository: https://github.com/be-smith/navani
+usage:
+    - method: python
+      setup: navani 
+      command: navani.echem.echem_file_loader({{ input_path }})
+installation:
+    - method: pip
+      packages:
+          - navani ~= 0.1
+      requires_python: '>=3.10'
