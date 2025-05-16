@@ -1,7 +1,8 @@
 ---
 id: qe-tools
 name: Tools for Quantum ESPRESSO
-description: A set of tools for the Quantum ESPRESSO suite of electronic-structure simulation codes.
+description: A set of tools for the Quantum ESPRESSO suite of electronic-structure
+    simulation codes.
 subject:
     - atomistic simulation
     - electronic structure calculations
@@ -15,12 +16,13 @@ installation:
     - method: pip
       packages:
           - qe-tools>=2.2
-      requires_python: ">=3.8"
+      requires_python: '>=3.8'
 citations:
     - uri: doi:10.1088/0953-8984/21/39/395502
       creators:
           - P. Giannozzi
-      title: "QUANTUM ESPRESSO: a modular and open-source software project for quantum simulations of materials"
+      title: 'QUANTUM ESPRESSO: a modular and open-source software project for quantum
+          simulations of materials'
       type: article
     - uri: https://github.com/aiidateam/qe-tools
       creators:
@@ -31,10 +33,10 @@ supported_filetypes:
     - id: qe-pw-in
       description: An input file for the Quantum ESPRESSO PW package
       template:
-        input_type: PW
+          input_type: PW
     - id: qe-cp-in
       description: An input file for the Quantum ESPRESSO CP package
       template:
-        input_type: CP
+          input_type: CP
 license:
     spdx: GPL2
