@@ -33,12 +33,12 @@ usage:
       setup: galvani
       command: galvani.BioLogic.MPRfile({{ input_path }}).data
       supported_filetypes:
-        - biologic-mpr
+          - biologic-mpr
     - method: python
       setup: galvani
       command: galvani.BioLogic.MPTfile({{ input_path }})
       supported_filetypes:
-        - biologic-mpt
+          - biologic-mpt
 installation:
     - method: pip
       packages:

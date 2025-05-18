@@ -18,7 +18,7 @@ citations:
     - uri: https://github.com/ks00x/zeiss_tiff_meta
       creators:
           - K. Schwarzburg
-      title: 'zeiss_tiff_meta github repository'
+      title: zeiss_tiff_meta github repository
       type: software
 usage:
     - method: python

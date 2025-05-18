@@ -4,7 +4,8 @@ id: >-
 name: >-
     Rigaku .rasx file
 description: >-
-    A ZIP file, containing nested folders storing PXRD patterns in plain text, with measurement
+    A ZIP file, containing nested folders storing PXRD patterns in plain text, with
+    measurement
     metadata as XML.
 associated_file_extensions:
     - rasx
