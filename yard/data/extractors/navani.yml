@@ -5,14 +5,12 @@ name: >-
     navani
 description: >-
     Module for processing and plotting electrochemical data from battery cyclers.
-    Contains functions to extract dQ/dV.
+    Contains functions to extract dQ/dV. Also supports Excel and text outputs from
+    Arbin and Landt.
 supported_filetypes:
     - id: biologic-mpr
     - id: neware-nda
-    - id: landt-excel
-    - id: arbin-excel
     - id: arbin-res
-    - id: ivium-txt
 license:
     spdx: MIT
 subject:
