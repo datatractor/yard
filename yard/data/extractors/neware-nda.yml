@@ -13,12 +13,12 @@ subject:
     - electrochemistry
     - voltammetry
 citations:
-    - uri: https://github.com/Solid-Energy-Systems/NewareNDA
+    - uri: https://github.com/d-cogswell/NewareNDA
       creators:
           - D. Cogswell
       title: NewareNDA github repository
       type: software
-source_repository: https://github.com/Solid-Energy-Systems/NewareNDA
+source_repository: https://github.com/d-cogswell/NewareNDA
 usage:
     - method: python
       setup: NewareNDA 
