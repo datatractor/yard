@@ -1,0 +1,34 @@
+---
+id: >-
+    neware-nda
+name: >-
+    NewareNDA
+description: >-
+    Python module and command line tool for reading and converting Neware nda and
+    ndax battery cycling files. Auxiliary temperature fields are currently supported
+    in both formats.
+supported_filetypes:
+    - id: neware-nda
+license:
+    spdx: BSD-3-Clause
+subject:
+    - electrochemistry
+    - voltammetry
+citations:
+    - uri: https://github.com/d-cogswell/NewareNDA
+      creators:
+          - D. Cogswell
+      title: NewareNDA github repository
+      type: software
+source_repository: https://github.com/d-cogswell/NewareNDA
+usage:
+    - method: python
+      setup: NewareNDA
+      command: NewareNDA.read({{ input_path }})
+    - method: cli
+      command: NewareNDA-cli {{ input_path }} {{ output_path }}
+installation:
+    - method: pip
+      packages:
+          - NewareNDA >= 2025
+      requires_python: '>=3.6'
