@@ -1,0 +1,43 @@
+---
+id: >-
+    nmrglue
+name: >-
+    nmrglue
+description: >-
+    nmrglue is a module for working with NMR data in Python. When used with the numpy,
+    scipy, and matplotlib packages nmrglue provides a robust interpreted environment
+    for processing, analyzing, and inspecting NMR data.
+supported_filetypes:
+    - id: jcamp-dx
+      template:
+          input_type: jcampdx
+      description: >-
+          Note: Only 1D NMR data is supported, not the full JCAMP-DX standard. Many
+          other NMR data file formats are supported.
+license:
+    spdx: BSD-3-Clause
+subject:
+    - nuclear magnetic resonance
+    - nuclear magnetic resonance spectrometry
+citations:
+    - uri: doi:10.1007/s10858-013-9718-x
+      creators:
+          - J. J. Helmus
+          - C. P. Jaroniec
+      title: 'nmrglue: An open source Python package for the analysis of multidimensional
+          NMR data'
+      type: article
+    - uri: https://github.com/jjhelmus/nmrglue
+      title: nmrglue github repository
+      type: software
+source_repository: https://github.com/jjhelmus/nmrglue
+documentation: https://nmrglue.readthedocs.io
+usage:
+    - method: python
+      setup: nmrglue
+      command: nmrglue.fileio.{{ input_type }}.read
+installation:
+    - method: pip
+      packages:
+          - nmrglue ~= 0.11
+      requires_python: '>=3.6'
