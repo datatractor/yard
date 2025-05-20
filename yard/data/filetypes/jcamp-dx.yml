@@ -1,0 +1,18 @@
+---
+id: >-
+    jcamp-dx
+name: >-
+    JCAMP-DX
+description: >-
+    An IUPAC-endorsed standard for the representation of spectroscopic data and metadata
+    in a textual format with blocks of compressed numerical data encoded as ASCII.
+    It is available as output from several spectroscopic software packages.
+associated_file_extensions:
+    - dx
+    - jdx
+subject:
+    - spectroscopy
+    - infrared spectroscopy
+    - nuclear magnetic resonance spectrometry
+    - electronc magnetic resonance spectrometry
+    - mass spectrometry
