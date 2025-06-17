@@ -1,0 +1,19 @@
+---
+id: >-
+    arbin-res
+name: >-
+    Arbin results file
+description: >-
+    A Microsoft Access database produced by Arbin electrochemical cyclers that stores
+    the results of cycling experiments.
+associated_file_extensions:
+    - res
+associated_vendors:
+    - Arbin Instruments
+subject:
+    - electrochemistry
+    - voltammetry
+    - impedance spectroscopy
+    - potentiometry
+associated_software:
+    - Arbin Instruments MITS
