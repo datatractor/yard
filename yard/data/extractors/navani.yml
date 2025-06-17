@@ -11,6 +11,10 @@ supported_filetypes:
     - id: biologic-mpr
     - id: neware-nda
     - id: arbin-res
+      description: >-
+          Note: Arbin .res extraction requires the `mdbtools` (https://github.com/mdbtools/mdbtools)
+          executable to be available at runtime.
+
 license:
     spdx: MIT
 subject:
