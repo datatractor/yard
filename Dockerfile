@@ -1,4 +1,4 @@
-from python:3.11-slim-buster
+from python:3.11-slim-bookworm
 
 run apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
