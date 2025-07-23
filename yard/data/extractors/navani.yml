@@ -14,7 +14,6 @@ supported_filetypes:
       description: >-
           Note: Arbin .res extraction requires the `mdbtools` (https://github.com/mdbtools/mdbtools)
           executable to be available at runtime.
-
 license:
     spdx: MIT
 subject:
