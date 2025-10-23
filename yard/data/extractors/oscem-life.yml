@@ -1,0 +1,26 @@
+---
+id: >-
+    oscem-life
+name: >-
+    OSC-EM Life Sciences Extractor
+description: >-
+    Extract metadata from electron microscopes for life science applications.
+
+    Reads project directories from SerialEM, EPU, and TOMO5. Outputs the Open Science
+    Community for Electron Microscopy (OSC-EM) standards (single particle analysis, or
+    tomography).
+supported_filetypes:
+    - id: serialem-dir
+    - id: epu-dir
+    - id: tomo5-dir
+license:
+    spdx: BSD-3-Clause
+subject:
+    - electron-microscopy
+    - imaging
+source_repository: https://github.com/SwissOpenEM/LS_Metadata_reader/
+documentation: https://github.com/SwissOpenEM/LS_Metadata_reader
+usage:
+    - method: container
+      setup: ghcr.io/swissopenem/ls_metadata_reader:main
+      command: -o {{output_path}} {{ input_path }}

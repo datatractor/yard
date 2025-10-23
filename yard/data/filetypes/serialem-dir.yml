@@ -1,0 +1,12 @@
+---
+id: >-
+    serialem-dir
+name: >-
+    SerialEM Project directory
+description: >-
+    Represents a project directory created by the SerialEM software for electron
+    microscopy data acquisition.
+subject:
+    - electron-microscopy
+associated_software:
+    - SerialEM

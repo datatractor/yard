@@ -1,0 +1,14 @@
+---
+id: >-
+    epu-dir
+name: >-
+    Thermo Fisher EPU Project directory
+description: >-
+    Represents a project directory created by Thermo Fisher Scientific's EPU. It should
+    include metadata xml files.
+subject:
+    - electron-microscopy
+associated_software:
+    - EPU
+associated_vendors:
+    - Thermo Fisher Scientific
