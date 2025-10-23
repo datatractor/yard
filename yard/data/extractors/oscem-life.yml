@@ -12,7 +12,6 @@ description: >-
 supported_filetypes:
     - id: serialem-dir
     - id: epu-dir
-    - id: tomo5-dir
 license:
     spdx: BSD-3-Clause
 subject:
