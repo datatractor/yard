@@ -12,6 +12,8 @@ description: >-
 supported_filetypes:
     - id: serialem-dir
     - id: epu-dir
+supported_output_filetypes:
+    - id: oscem-json
 license:
     spdx: BSD-3-Clause
 subject:

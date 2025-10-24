@@ -1,0 +1,12 @@
+---
+id: >-
+    oscem-json
+name: >-
+    Electron microscopy metadata following the Open Science Community for Electron
+    Microscopy (OSC-EM) standards.
+description: >-
+    A format for Fischer Scope Indenter
+associated_file_extensions:
+    - json
+subject:
+    - electron-microscopy
