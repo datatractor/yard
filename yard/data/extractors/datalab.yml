@@ -1,0 +1,40 @@
+---
+id: >-
+    datalab
+name: >-
+    datalab
+description: >-
+    datalab is an extensible sample-based RDM platform for materials and chemical
+    with domain support for several characterisation techniques.
+supported_filetypes:
+    - id: pstrace-txt
+    - id: agilent-asp
+    - id: topspin-project
+    - id: jcamp-dx
+    - id: renishaw-wdf
+    - id: mettler-toledo-asc
+    - id: avantes-raw8-txt
+    - id: panalytical-xrdml
+    - id: diffrac-eva-xy
+    - id: rigaku-rasx
+license:
+    spdx: MIT
+citations:
+    - uri: https://github.com/datalab-org/datalab
+      creators:
+          - M. Evans
+          - B. Charmes
+          - B. Smith
+          - J. Bocarsly
+      title: datalab github repository
+      type: software
+source_repository: https://github.com/datalab-org/datalab
+documentation: https://docs.datalab-org.io
+usage:
+    - method: python
+      setup: pydatalab
+installation:
+    - method: pip
+      packages:
+          - datalab-server[apps] ~= 0.6
+      requires_python: '>=3.10'
