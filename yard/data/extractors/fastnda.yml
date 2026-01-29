@@ -1,0 +1,46 @@
+---
+id: >-
+    fastnda
+name: >-
+    fastnda
+description: >-
+    Python module and command line tool to read Neware NDA and NDAX battery
+    cycling files.
+supported_filetypes:
+    - id: neware-nda
+license:
+    spdx: BSD-3-Clause
+subject:
+    - electrochemistry
+    - voltammetry
+citations:
+    - uri: https://github.com/EmpaEConversion/fastnda
+      creators:
+          - G. Kimbell
+      title: fastnda github repository
+      type: software
+source_repository: https://github.com/EmpaEConversion/fastnda
+usage:
+    - method: python
+      setup: fastnda
+      command: fastnda.read({{ input_path }})
+    - method: cli
+      command: fastnda --help
+    - method: cli
+      command: fastnda convert {{ input_path }} {{ output_path }}
+    - method: cli
+      command: fastnda convert-metadata {{ input_path }} {{ output_path }}
+installation:
+    - method: pip
+      packages:
+          - fastnda >= 1.0.1
+      requires_python: '>=3.10'
+instructions: >-
+    Install the package into a Python >=3.10 environment with
+    `pip install fastnda`. After activating the environment, the `fastnda`
+    entrypoint will be available on the command-line.
+
+    With Python, use `fastnda.read(file)` or `fastnda.read_metadata(file)`.
+    With the CLI, commands are `convert`, `batch-convert`, and
+    `convert-metadata`. Use `fastnda --help` and fastnda COMMAND --help to see
+    detailed options.
