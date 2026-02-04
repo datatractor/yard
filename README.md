@@ -19,11 +19,12 @@ By providing this data in a web API, it hoped that users can discover new extrac
 
 The state of the `main` branch is deployed to https://yard.datatractor.org/, with API docs (and built-in client) accessible at https://yard.datatractor.org/redoc.
 
-For more information, see the preprint:
+For more information, see the paper:
 
-> **Datatractor: Metadata, automation, and registries for extractor interoperability in the chemical and materials sciences**  
+> **`Datatractor`: Metadata, automation, and registries for extractor interoperability in the chemical and materials sciences**  
 > Matthew L. Evans, Gian-Marco Rignanese, David Elbert & Peter Kraus  
-> [arXiv:2410.18839](https://arxiv.org/abs/2410.18839) (2024)
+> MRS Bulletin, 50, pp838–845 (2025) DOI: [10.1557/s43577-025-00925-8](https://doi.org/10.1557/s43577-025-00925-8)  
+> (preprint [arXiv:2410.18839](https://arxiv.org/abs/2410.18839))
 
 
 ## Contributing
