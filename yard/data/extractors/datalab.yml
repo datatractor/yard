@@ -5,15 +5,16 @@ name: >-
     datalab
 description: >-
     datalab is an extensible sample-based RDM platform for materials and chemical
-    with domain support for several characterisation techniques.
-supported_filetypes:
+    with domain support for several characterisation techniques. Extra filetypes to
+    add in the future:
+    - id: mettler-toledo-asc
     - id: pstrace-txt
     - id: agilent-asp
     - id: topspin-project
+    - id: avantes-raw8-txt
+supported_filetypes:
     - id: jcamp-dx
     - id: renishaw-wdf
-    - id: mettler-toledo-asc
-    - id: avantes-raw8-txt
     - id: panalytical-xrdml
     - id: diffrac-eva-xy
     - id: rigaku-rasx
@@ -30,9 +31,6 @@ citations:
       type: software
 source_repository: https://github.com/datalab-org/datalab
 documentation: https://docs.datalab-org.io
-usage:
-    - method: python
-      setup: pydatalab
 installation:
     - method: pip
       packages:
