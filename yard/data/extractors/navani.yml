@@ -6,7 +6,7 @@ name: >-
 description: >-
     Module for processing and plotting electrochemical data from battery cyclers.
     Contains functions to extract dQ/dV. Also supports Excel and text outputs from
-    Arbin and Landt.
+    Arbin, Landt and Maccor.
 supported_filetypes:
     - id: biologic-mpr
     - id: neware-nda
@@ -28,7 +28,7 @@ citations:
 source_repository: https://github.com/be-smith/navani
 usage:
     - method: python
-      setup: navani
+      setup: navani.echem
       command: navani.echem.echem_file_loader({{ input_path }})
 installation:
     - method: pip
